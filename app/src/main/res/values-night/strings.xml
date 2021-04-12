@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="registration_for_students">Registration for Students</string>
+    <string name="first_name">First Name</string>
+    <string name="surname">Surname</string>
+    <string name="age">Age</string>
+    <string name="student_registration">Student Registration</string>
+    <string name="password">Password</string>
+    <string name="cancel">Cancel</string>
+    <string name="proceed">Proceed</string>
+    <string name="username">Username</string>
+    <string name="password2">Password</string>
+    <string name="re_enter_password">Re-Enter Password</string>
+    <string name="welcome">Welcome!</string>
+    <string name="please_enter_your_username_and_password_to_begin">Please enter your Username and Password to begin.</string>
+    <string name="login">Login</string>
+    <string name="not_yet_registered">Not yet registered?</string>
+    <string name="sign_up_for_teacher">Sign Up for Teacher</string>
+    <string name="sign_up_for_students">Sign Up for Students</string>
+    <string name="sign_up_for_teachers">Sign Up for Teachers</string>
+    <string name="teacher_registration">Teacher Registration</string>
+    <string name="school">School</string>
+</resources>
