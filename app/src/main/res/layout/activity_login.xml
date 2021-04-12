@@ -44,31 +44,34 @@
 
     <EditText
         android:id="@+id/Username"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
+        android:drawableLeft="@drawable/username"
         android:ems="10"
         android:hint="@string/username"
+        android:importantForAutofill="no"
         android:inputType="text"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:textColorHint="#000000"
         android:textSize="18sp"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
         android:id="@+id/Password"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:layout_marginBottom="371dp"
+        android:drawableLeft="@drawable/password"
         android:ems="10"
         android:hint="Password"
+        android:importantForAutofill="no"
         android:inputType="textPassword"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:textColorHint="#000000"
         android:textSize="18sp"
         android:textStyle="italic"
@@ -77,8 +80,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Username"
-        app:layout_constraintVertical_bias="0.25"
-        android:importantForAutofill="no" />
+        app:layout_constraintVertical_bias="0.25" />
 
     <Button
         android:id="@+id/Login"
@@ -120,6 +122,7 @@
         android:layout_marginBottom="191dp"
         android:text="@string/sign_up_for_teachers"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:backgroundTint="#673AB7"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -132,9 +135,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:layout_marginBottom="107dp"
-        android:onClick="SignUpStudents"
         android:text="@string/sign_up_for_students"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:backgroundTint="#FF9800"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

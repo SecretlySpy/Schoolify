@@ -24,7 +24,7 @@ public class Login extends AppCompatActivity {
         Reg_Teach = (Button) findViewById(R.id.ForTeachers);
         Reg_Teach.setOnClickListener(v -> openRegistration_For_Teachers());
     }
-
+//Button function//
 public void openRegistration_For_Students() {
     Intent regstud = new Intent(this, Registration_For_Students.class);
     startActivity(regstud);
