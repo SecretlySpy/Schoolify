@@ -9,26 +9,42 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Schoolify">
-        <!--Login View-->
-        <activity android:name=".Login"
+
+        <!--Dashboard-->
+        <activity
+            android:name=".Student_Dashboard"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+
         </activity>
-        <!--Registration for Students-->
-        <activity android:name=".Registration_For_Students"
+        <!-- Login View -->
+        <activity
+            android:name=".Login"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+
         </activity>
-        <!--Registration for Teachers-->
-        <activity android:name=".Registration_For_Teachers"
+        <!-- Registration for Students -->
+        <activity
+            android:name=".Registration_For_Students"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+
         </activity>
-        <!--Splash Screen-->
-        <activity android:name=".MainActivity"
+        <!-- Registration for Teachers -->
+        <activity
+            android:name=".Registration_For_Teachers"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+
+        </activity>
+        <!-- Splash Screen -->
+        <activity
+            android:name=".MainActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
