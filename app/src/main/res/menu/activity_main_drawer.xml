@@ -9,11 +9,23 @@
             android:icon="@drawable/ic_baseline_home_24"
             android:title="@string/menu_home" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="subjects"
+            android:icon="@drawable/ic_baseline_menu_book_24"
+            android:title="Subjects" />
+        <item
+            android:id="calendar"
+            android:icon="@drawable/ic_baseline_calendar_today_24"
+            android:title="Calendar" />
+        <item
+            android:id="tasks"
+            android:icon="@drawable/ic_baseline_list_alt_24"
+            android:title="Tasks" />
+        <item
+            android:id="settings"
             android:icon="@drawable/ic_baseline_handyman_24"
             android:title="Settings" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="about"
             android:icon="@drawable/ic_baseline_contact_support_24"
             android:title="About" />
     </group>
