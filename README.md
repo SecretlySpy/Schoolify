@@ -1,2 +1,2 @@
-# Schoolify
+# Schoolify App
  Capstone Project (LMS)
