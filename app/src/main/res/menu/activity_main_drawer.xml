@@ -9,24 +9,24 @@
             android:icon="@drawable/ic_baseline_home_24"
             android:title="@string/menu_home" />
         <item
-            android:id="subjects"
+            android:id="@+id/subjects"
             android:icon="@drawable/ic_baseline_menu_book_24"
-            android:title="Subjects" />
+            android:title="@string/subjects" />
         <item
-            android:id="calendar"
+            android:id="@+id/calendar"
             android:icon="@drawable/ic_baseline_calendar_today_24"
-            android:title="Calendar" />
+            android:title="@string/calendar" />
         <item
-            android:id="tasks"
+            android:id="@+id/tasks"
             android:icon="@drawable/ic_baseline_list_alt_24"
-            android:title="Tasks" />
+            android:title="@string/tasks" />
         <item
-            android:id="settings"
+            android:id="@+id/settings"
             android:icon="@drawable/ic_baseline_handyman_24"
-            android:title="Settings" />
+            android:title="@string/settings" />
         <item
-            android:id="about"
+            android:id="@+id/about"
             android:icon="@drawable/ic_baseline_contact_support_24"
-            android:title="About" />
+            android:title="@string/about" />
     </group>
 </menu>
