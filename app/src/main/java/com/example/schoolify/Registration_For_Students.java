@@ -18,11 +18,24 @@ public class Registration_For_Students extends AppCompatActivity {
 
         cancel = (Button) findViewById(R.id.CancelB);
         cancel.setOnClickListener(v -> openLogin());
+
+        proceed = (Button) findViewById(R.id.ProceedB);
+        proceed.setOnClickListener(v -> openDashboard());
     }
 
     //Button function//
+
+    //Cancel Button//
     public void openLogin() {
         Intent login = new Intent(this, Login.class);
         startActivity(login);
+    }
+
+    //Proceed Button//
+    public void openDashboard() {
+
+
+        Intent dashboardS = new Intent(this, Dashboard_Student.class);
+        startActivity(dashboardS);
     }
 }
