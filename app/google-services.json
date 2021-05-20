@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "74487328546",
+    "firebase_url": "https://schoolify-f1a0e-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "schoolify-f1a0e",
+    "storage_bucket": "schoolify-f1a0e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:74487328546:android:fcb3afb5854c8085343f7b",
+        "android_client_info": {
+          "package_name": "com.example.schoolify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "74487328546-0rhpcopouujhduq5r2omvcopip7k7fhp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxRRjzCmgbkj-MOCOJmGzvbaJa5mbA9PA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "74487328546-0rhpcopouujhduq5r2omvcopip7k7fhp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
