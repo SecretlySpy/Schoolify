@@ -152,7 +152,7 @@
         android:autofillHints=""
         android:ems="10"
         android:hint="Email"
-        android:inputType="text"
+        android:inputType="textEmailAddress"
         android:textColorHint="#000000"
         android:textStyle="italic"
         app:layout_constraintBottom_toTopOf="@+id/Password_input"

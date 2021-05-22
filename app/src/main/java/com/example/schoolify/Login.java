@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Login extends AppCompatActivity {
 //Declaration Variables//
-    Button Reg_Stud, Reg_Teach;
+    public Button Reg_Stud, Reg_Teach;
 
     @Override
     //Content View//
