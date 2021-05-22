@@ -4,7 +4,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 public class Students implements Parcelable {
-
+    private String username;
     private String email;
     private String stud_id;
     private String fname;
@@ -48,8 +48,17 @@ public class Students implements Parcelable {
         this.pass2 = pass2;
     }
 
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
     public Students(String email, String stud_id, String fname, String lname,
-                    String pass1, String pass2) {
+                    String pass1, String pass2, String username) {
 
         this.email = email;
         this.stud_id = stud_id;
@@ -57,6 +66,7 @@ public class Students implements Parcelable {
         this.lname = lname;
         this.pass1 = pass1;
         this.pass2 = pass2;
+        this.username = username;
     }
 
     public Students() {
@@ -70,6 +80,7 @@ public class Students implements Parcelable {
         lname = in.readString();
         pass1 = in.readString();
         pass2 = in.readString();
+        username = in.readString();
     }
 
 
@@ -103,6 +114,7 @@ public class Students implements Parcelable {
         return "User{" +
                 "email='" + email + '\'' +
                 ", stud_id='" + stud_id + '\'' +
+                ", username='" + username + '\'' +
                 ", fname='" + fname + '\'' +
                 ", lname='" + lname + '\'' +
                 ", pass1='" + pass1 + '\'' +
@@ -120,6 +132,7 @@ public class Students implements Parcelable {
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(email);
         dest.writeString(stud_id);
+        dest.writeString(username);
         dest.writeString(fname);
         dest.writeString(lname);
         dest.writeString(pass1);

@@ -70,7 +70,7 @@ public class Registration_For_Students extends AppCompatActivity {
 }
 
     public void registerNewEmail(final String email, String fname, String lname,
-                                 String pass1, String pass2){
+                                 String pass1, String pass2, String username){
 
         FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, pass1)
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -88,7 +88,8 @@ public class Registration_For_Students extends AppCompatActivity {
                             students.setFname(fname);
                             students.setLname(lname);
                             students.setPass1(pass1);
-                            students.setPass1(pass2);
+                            students.setPass2(pass2);
+                            students.setUsername(username);
                             students.setStud_id(FirebaseAuth.getInstance().getUid());
 
                             FirebaseFirestoreSettings settings =
@@ -173,6 +174,7 @@ public class Registration_For_Students extends AppCompatActivity {
                 if(!isEmpty(email1.getText().toString())
                         && !isEmpty(password1.getText().toString())
                         && !isEmpty(password2.getText().toString())
+                        && !isEmpty(username.getText().toString())
                         && !isEmpty(fname.getText().toString())
                         && !isEmpty(lname.getText().toString()))
                 {
@@ -183,6 +185,7 @@ public class Registration_For_Students extends AppCompatActivity {
                         registerNewEmail(email1.getText().toString(),
                                 password1.getText().toString(),
                                 password2.getText().toString(),
+                                username.getText().toString(),
                                 fname.getText().toString(),
                                 lname.getText().toString());
                     }else{
