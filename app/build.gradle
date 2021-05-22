@@ -48,6 +48,6 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     implementation 'com.android.support:multidex:1.0.3' //enter the latest version
-    implementation 'com.google.firebase:firebase-core:19.0.0'
+    implementation 'com.google.firebase:firebase-core:19.0.0' //insert this archim when using firebase
 
 }
