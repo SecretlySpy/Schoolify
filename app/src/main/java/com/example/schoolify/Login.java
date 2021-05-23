@@ -6,6 +6,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.schoolify.register.StudentRegister;
 
 
 public class Login extends AppCompatActivity {
@@ -28,7 +29,7 @@ public class Login extends AppCompatActivity {
 
     //Registration for Students//
 public void openRegistration_For_Students() {
-    Intent regstud = new Intent(this, Registration_For_Students.class);
+    Intent regstud = new Intent(this, StudentRegister.class);
     startActivity(regstud);
 }
 //Registration for Teachers//

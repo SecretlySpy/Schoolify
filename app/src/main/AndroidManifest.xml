@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.schoolify">
-<uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,32 +11,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Schoolify">
+        <activity android:name=".register.StudentRegister"
+            android:theme="@style/Theme.Schoolify.NoActionBar">
+
+        </activity>
         <!-- Dashboard -->
         <activity
             android:name=".Dashboard_Student"
             android:label="@string/title_activity_dashboard__student"
             android:theme="@style/Theme.Schoolify.NoActionBar">
 
-        </activity>
-        <!-- Login View -->
+        </activity> <!-- Login View -->
         <activity
             android:name=".Login"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
 
-        </activity>
-        <!-- Registration for Students -->
-        <activity
-            android:name=".Registration_For_Students"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-
-        </activity>
+        </activity> <!-- Registration for Students -->
         <!-- Registration for Teachers -->
         <activity
             android:name=".Registration_For_Teachers"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
 
-        </activity>
-        <!-- Splash Screen -->
+        </activity> <!-- Splash Screen -->
         <activity
             android:name=".MainActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">

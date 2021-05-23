@@ -1,5 +1,6 @@
 plugins {
     id 'com.android.application'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -32,6 +33,7 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')//annes addons
     implementation 'androidx.appcompat:appcompat:1.3.0'
+
     implementation 'com.google.android.material:material:1.3.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
 
@@ -52,6 +54,5 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     implementation 'com.android.support:multidex:1.0.3' //enter the latest version
-
 
 }
