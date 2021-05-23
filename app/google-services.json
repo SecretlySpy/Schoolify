@@ -1,34 +1,33 @@
 {
   "project_info": {
-    "project_number": "455028974368",
-    "firebase_url": "https://schoolify-a2038-default-rtdb.asia-southeast1.firebasedatabase.app",
-    "project_id": "schoolify-a2038",
-    "storage_bucket": "schoolify-a2038.appspot.com"
+    "project_number": "810028775329",
+    "project_id": "schoolify-d7ae8",
+    "storage_bucket": "schoolify-d7ae8.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:455028974368:android:6c186b7e9413f8c83ded45",
+        "mobilesdk_app_id": "1:810028775329:android:b4556c26da170c2bad3de0",
         "android_client_info": {
           "package_name": "com.example.schoolify"
         }
       },
       "oauth_client": [
         {
-          "client_id": "455028974368-h45ff9cbf5qdbamfgocsgphukvimgdbi.apps.googleusercontent.com",
+          "client_id": "810028775329-ese7pvcdc6dss3i8o7hplag244vh4736.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAdUTJZfXcGEO2eUP7j7OIKucJ_1L3Nugw"
+          "current_key": "AIzaSyCh01WpwBTCXMRcrxKisWJsa_ArmI6Jt8c"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "455028974368-h45ff9cbf5qdbamfgocsgphukvimgdbi.apps.googleusercontent.com",
+              "client_id": "810028775329-ese7pvcdc6dss3i8o7hplag244vh4736.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
