@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
                     //Remove activity
                     finish();
                 } catch (Exception e) {
+                    e.printStackTrace();//stackTrace
                 }
             }
         };
