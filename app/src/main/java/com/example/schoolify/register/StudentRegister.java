@@ -1,14 +1,12 @@
 package com.example.schoolify.register;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.schoolify.R;
 import com.example.schoolify.model.User;
@@ -17,7 +15,6 @@ import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.FirebaseFirestore;
 
@@ -27,7 +24,7 @@ import org.jetbrains.annotations.NotNull;
 public class StudentRegister extends AppCompatActivity{
 
     private static final String TAG = "StudentRegister";
-    private TextInputEditText mFullname, mUsername, mEmailAddress,
+    private TextInputEditText mFullname, mcPassword, mEmailAddress,
             mPassword;
     private FirebaseFirestore mDb;
     private FirebaseAuth mAuth;
@@ -38,10 +35,9 @@ public class StudentRegister extends AppCompatActivity{
         setContentView(R.layout.activity_student_register);
 
         mFullname =  findViewById(R.id.input_fullname);
-        mUsername =  findViewById(R.id.input_username);
         mEmailAddress =  findViewById(R.id.input_emailadd);
         mPassword =  findViewById(R.id.input_password1);
-
+        mcPassword = findViewById(R.id.input_password2);
         findViewById(R.id.reg_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -65,7 +61,7 @@ public class StudentRegister extends AppCompatActivity{
     private void register() {
 
         String fullname = mFullname.getText().toString().trim();
-        String username = mUsername.getText().toString().trim();
+        String confirmpassword = mcPassword.getText().toString().trim();
         String email = mEmailAddress.getText().toString().trim();
         String password = mPassword.getText().toString().trim();
 
@@ -75,9 +71,9 @@ public class StudentRegister extends AppCompatActivity{
             return;
         }
 
-        if(username.isEmpty()){
-            mUsername.setError("Username is required");
-            mUsername.requestFocus();
+        if(confirmpassword.isEmpty()){
+            mcPassword.setError("Confirm your password");
+            mcPassword.requestFocus();
             return;
         }
 
@@ -109,7 +105,7 @@ public class StudentRegister extends AppCompatActivity{
                     @Override
                     public void onComplete(@NonNull @NotNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
-                            User user = new User(fullname,username,email,password);
+                            User user = new User(fullname,email,confirmpassword,password);
                             FirebaseDatabase.getInstance().getReference("Students")
                                     .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
                                     .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {

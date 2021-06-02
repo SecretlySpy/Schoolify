@@ -2,18 +2,17 @@ package com.example.schoolify.model;
 
 public class User {
 
-    public String fullName,userName,emailAdd,passWord;
+    public String fullName,confirmpassWord,emailAdd,passWord;
 
-    public User(){
+    public User(String fullname, String email, String confirmpassword, String password){
 
     }
 
-    public User(String fullName,String userName,String emailAdd,String passWord){
+    public User(String fullName,String emailAdd,String passWord){
 
         this.fullName = fullName;
-        this.userName = userName;
         this.emailAdd = emailAdd;
         this.passWord = passWord;
-
+        this.confirmpassWord = confirmpassWord;
     }
 }
