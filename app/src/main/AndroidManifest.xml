@@ -11,26 +11,33 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Schoolify">
+
+        <!-- Registration for Students -->
         <activity android:name=".register.StudentRegister"
-            android:theme="@style/Theme.Schoolify.NoActionBar">
+            android:theme="@style/Theme.Schoolify.NoActionBar"
+            android:exported="true">
 
         </activity>
         <!-- Dashboard -->
         <activity
             android:name=".Dashboard_Student"
             android:label="@string/title_activity_dashboard__student"
-            android:theme="@style/Theme.Schoolify.NoActionBar">
+            android:theme="@style/Theme.Schoolify.NoActionBar"
+            android:exported="true">
 
-        </activity> <!-- Login View -->
+        </activity>
+        <!-- Login View -->
         <activity
             android:name=".Login"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:exported="true">
 
-        </activity> <!-- Registration for Students -->
+        </activity>
         <!-- Registration for Teachers -->
         <activity
             android:name=".Registration_For_Teachers"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:exported="true">
 
         </activity> <!-- Splash Screen -->
         <activity

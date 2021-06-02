@@ -20,11 +20,11 @@
         android:id="@+id/Registration_for_Students"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/diplomata"
         android:gravity="center"
-        android:layout_marginTop="10dp"
         android:text="@string/student_registration"
-        android:textColor="@color/white"
+        android:textColor="@android:color/holo_blue_light"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,63 +37,70 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/input_fullname"
-            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#2196F3"
             android:hint="Full Name" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/t2"
         android:layout_width="match_parent"
-        android:layout_below="@id/t1"
-        android:layout_height="wrap_content">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/input_username"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Username" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/t3"
-        android:layout_width="match_parent"
-        android:layout_below="@id/t2"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_below="@id/t3">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/input_emailadd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#2196F3"
             android:hint="Email Address" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/t4"
+        android:id="@+id/t3"
         android:layout_width="match_parent"
-        android:layout_below="@id/t3"
-        app:passwordToggleEnabled="true"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_below="@id/t4"
+        app:passwordToggleEnabled="true">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/input_password1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#2196F3"
             android:hint="Password" />
     </com.google.android.material.textfield.TextInputLayout>
 
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/t4"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/reg_button"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_password2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2196F3"
+            android:hint="Confirm Password" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:layout_marginTop="10dp"
         android:id="@+id/reg_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Register" />
+        android:layout_marginTop="50dp"
+        android:text="Register"
+        app:backgroundTint="#4CAF50" />
+
     <Button
         android:id="@+id/cancel_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Cancel" />
+        android:text="Cancel"
+        app:backgroundTint="#F44336" />
 </LinearLayout>
