@@ -1,5 +1,6 @@
 package com.example.schoolify.model;
 
+
 public class User {
 
     public String fullName,confirmpassWord,emailAdd,passWord;
